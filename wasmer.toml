@@ -1,9 +1,10 @@
 [package]
 name = "claudemirton/local_wasmer_pkg"
-version = "0.1.2"
+version = "0.1.4"
 description = "Description for package local_wasmer_pkg"
 repository = "https://github.com/claudemirton/wasmer_hello_world"
 license = "MIT"
+readme = "./build/README.md"
 
 [[module]]
 name = "local_wasmer_pkg"
