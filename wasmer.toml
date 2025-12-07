@@ -1,0 +1,19 @@
+[package]
+name = "claudemirton/local_wasmer_pkg"
+version = "0.1.1"
+description = "Description for package local_wasmer_pkg"
+repository = "https://github.com/claudemirton/wasmer_hello_world"
+license = "MIT"
+
+[[module]]
+name = "local_wasmer_pkg"
+source = "build/release.wasm"
+abi = "wasi"
+
+[module.interfaces]
+wasi = "0.1.0-unstable"
+
+[[command]]
+name = "local_wasmer_pkg"
+module = "local_wasmer_pkg"
+runner = "wasi"

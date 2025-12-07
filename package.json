@@ -1,0 +1,28 @@
+{
+  "name": "local_wasmer_pkg",
+  "version": "1.0.0",
+  "description": "Testing local wasm package ",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:debug": "asc assembly/index.ts --target debug",
+    "asbuild:release": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "start": "npx serve ."
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.28.9"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  },
+  "dependencies": {
+    "as-wasi": "^0.6.0"
+  }
+}
