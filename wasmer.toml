@@ -1,6 +1,6 @@
 [package]
 name = "claudemirton/local_wasmer_pkg"
-version = "0.1.1"
+version = "0.1.2"
 description = "Description for package local_wasmer_pkg"
 repository = "https://github.com/claudemirton/wasmer_hello_world"
 license = "MIT"
